@@ -1,0 +1,2013 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Big Bro Umar Afroz — 6 Years 🎉</title>
+
+<style>
+
+/* =========================
+   RESET
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    min-height:100vh;
+    overflow-x:hidden;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    color:white;
+
+    background:
+        radial-gradient(
+            circle at 15% 15%,
+            rgba(99,102,241,.28),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 85% 10%,
+            rgba(236,72,153,.22),
+            transparent 30%
+        ),
+
+        radial-gradient(
+            circle at 50% 90%,
+            rgba(14,165,233,.16),
+            transparent 35%
+        ),
+
+        linear-gradient(
+            135deg,
+            #020617,
+            #0f172a,
+            #111827
+        );
+}
+
+
+/* =========================
+   STARS
+========================= */
+
+#stars{
+    position:fixed;
+    inset:0;
+    z-index:0;
+    pointer-events:none;
+}
+
+.star{
+    position:absolute;
+
+    width:3px;
+    height:3px;
+
+    border-radius:50%;
+
+    background:white;
+
+    opacity:.45;
+
+    animation:
+        twinkle
+        2s
+        infinite
+        alternate;
+}
+
+@keyframes twinkle{
+
+    from{
+        opacity:.15;
+        transform:scale(.5);
+    }
+
+    to{
+        opacity:1;
+        transform:scale(1.5);
+    }
+}
+
+
+/* =========================
+   FIRECRACKER SHOWER
+========================= */
+
+#crackerRain{
+    position:fixed;
+    inset:0;
+
+    overflow:hidden;
+
+    pointer-events:none;
+
+    z-index:2;
+}
+
+.cracker{
+    position:absolute;
+
+    top:-60px;
+
+    font-size:
+        calc(14px + 18px * var(--size));
+
+    opacity:.8;
+
+    animation:
+        crackerFall
+        var(--duration)
+        linear
+        infinite;
+
+    animation-delay:
+        var(--delay);
+
+    filter:
+        drop-shadow(
+            0 0 8px
+            rgba(255,255,255,.7)
+        );
+}
+
+@keyframes crackerFall{
+
+    0%{
+        transform:
+            translateY(-80px)
+            rotate(0deg)
+            scale(.7);
+
+        opacity:0;
+    }
+
+    10%{
+        opacity:.9;
+    }
+
+    50%{
+        transform:
+            translateY(50vh)
+            translateX(25px)
+            rotate(180deg)
+            scale(1);
+    }
+
+    100%{
+        transform:
+            translateY(115vh)
+            translateX(-35px)
+            rotate(360deg)
+            scale(.7);
+
+        opacity:0;
+    }
+}
+
+
+/* =========================
+   CONTAINER
+========================= */
+
+.container{
+    position:relative;
+
+    z-index:5;
+
+    width:min(
+        950px,
+        92%
+    );
+
+    margin:auto;
+
+    padding:
+        50px 0 20px;
+}
+
+
+/* =========================
+   HERO
+========================= */
+
+.hero{
+    text-align:center;
+
+    padding:
+        45px 10px 55px;
+}
+
+.badge{
+    display:inline-block;
+
+    padding:
+        11px 20px;
+
+    margin-bottom:25px;
+
+    border:
+        1px solid
+        rgba(255,255,255,.16);
+
+    border-radius:999px;
+
+    background:
+        rgba(255,255,255,.07);
+
+    backdrop-filter:
+        blur(12px);
+
+    box-shadow:
+        0 0 30px
+        rgba(129,140,248,.22);
+}
+
+.hero h1{
+
+    font-size:
+        clamp(
+            3rem,
+            10vw,
+            6rem
+        );
+
+    line-height:1;
+
+    background:
+        linear-gradient(
+            90deg,
+            #f9a8d4,
+            #c4b5fd,
+            #93c5fd,
+            #fde68a
+        );
+
+    -webkit-background-clip:text;
+    background-clip:text;
+
+    color:transparent;
+
+    animation:
+        titleGlow
+        3s
+        ease-in-out
+        infinite
+        alternate;
+}
+
+@keyframes titleGlow{
+
+    from{
+        filter:
+            drop-shadow(
+                0 0 5px
+                rgba(255,255,255,.1)
+            );
+    }
+
+    to{
+        filter:
+            drop-shadow(
+                0 0 30px
+                rgba(196,181,253,.55)
+            );
+    }
+}
+
+.hero h2{
+
+    margin-top:22px;
+
+    font-size:
+        clamp(
+            1.2rem,
+            4vw,
+            2rem
+        );
+
+    color:#e2e8f0;
+}
+
+.hero p{
+
+    max-width:720px;
+
+    margin:
+        22px auto 0;
+
+    color:#cbd5e1;
+
+    line-height:1.9;
+
+    font-size:1.05rem;
+}
+
+
+/* =========================
+   GLASS CARD
+========================= */
+
+.card{
+
+    margin:
+        28px 0;
+
+    padding:35px;
+
+    border-radius:30px;
+
+    background:
+        rgba(
+            15,
+            23,
+            42,
+            .64
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.13);
+
+    backdrop-filter:
+        blur(18px);
+
+    box-shadow:
+        0 25px 80px
+        rgba(0,0,0,.35),
+
+        inset 0 1px
+        rgba(255,255,255,.08);
+}
+
+.card h3{
+
+    text-align:center;
+
+    margin-bottom:22px;
+
+    font-size:
+        clamp(
+            1.5rem,
+            5vw,
+            2.2rem
+        );
+}
+
+
+/* =========================
+   MESSAGE
+========================= */
+
+.message{
+
+    text-align:center;
+
+    color:#e2e8f0;
+
+    line-height:2;
+
+    font-size:1.05rem;
+}
+
+.highlight{
+
+    color:#f9a8d4;
+
+    font-weight:bold;
+}
+
+.gold{
+
+    color:#fde68a;
+
+    font-weight:bold;
+}
+
+
+/* =========================
+   JOURNEY
+========================= */
+
+.years{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:16px;
+}
+
+.year{
+
+    text-align:center;
+
+    padding:
+        25px 12px;
+
+    border-radius:22px;
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(99,102,241,.16),
+            rgba(236,72,153,.09)
+        );
+
+    border:
+        1px solid
+        rgba(255,255,255,.08);
+
+    transition:.3s;
+}
+
+.year:hover{
+
+    transform:
+        translateY(-7px)
+        scale(1.02);
+
+    background:
+        linear-gradient(
+            135deg,
+            rgba(99,102,241,.28),
+            rgba(236,72,153,.16)
+        );
+}
+
+.year strong{
+
+    display:block;
+
+    font-size:2.5rem;
+
+    margin-bottom:8px;
+}
+
+.year span{
+
+    color:#94a3b8;
+}
+
+
+/* =========================
+   APPRECIATION
+========================= */
+
+.skills{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:12px;
+}
+
+.skill{
+
+    padding:
+        13px 18px;
+
+    border-radius:999px;
+
+    background:
+        rgba(255,255,255,.06);
+
+    border:
+        1px solid
+        rgba(255,255,255,.1);
+
+    color:#e2e8f0;
+
+    transition:.3s;
+}
+
+.skill:hover{
+
+    transform:
+        translateY(-4px)
+        scale(1.03);
+
+    background:
+        rgba(255,255,255,.12);
+}
+
+
+/* =========================
+   EMOJI WALL
+========================= */
+
+.emoji-wall{
+
+    text-align:center;
+
+    font-size:
+        clamp(
+            1.5rem,
+            5vw,
+            2.2rem
+        );
+
+    line-height:2;
+
+    letter-spacing:5px;
+
+    animation:
+        emojiFloat
+        4s
+        ease-in-out
+        infinite;
+}
+
+@keyframes emojiFloat{
+
+    0%,100%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-8px);
+    }
+}
+
+
+/* =========================
+   GIFT
+========================= */
+
+.gift-section{
+
+    text-align:center;
+}
+
+.gift-section p{
+
+    color:#cbd5e1;
+
+    line-height:1.8;
+
+    margin-bottom:10px;
+}
+
+.gift{
+
+    position:relative;
+
+    width:190px;
+    height:170px;
+
+    margin:
+        55px auto 30px;
+
+    cursor:pointer;
+
+    transition:.35s;
+
+    filter:
+        drop-shadow(
+            0 20px 30px
+            rgba(0,0,0,.5)
+        );
+}
+
+.gift:hover{
+
+    transform:
+        translateY(-10px)
+        scale(1.05);
+}
+
+.gift:active{
+
+    transform:scale(.95);
+}
+
+
+/* BOX */
+
+.box{
+
+    position:absolute;
+
+    left:15px;
+    bottom:0;
+
+    width:160px;
+    height:105px;
+
+    border-radius:
+        7px 7px 18px 18px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ec4899,
+            #be185d
+        );
+
+    border:
+        2px solid
+        rgba(255,255,255,.25);
+}
+
+
+/* LID */
+
+.lid{
+
+    position:absolute;
+
+    left:0;
+    top:30px;
+
+    width:190px;
+    height:43px;
+
+    border-radius:10px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #f472b6,
+            #db2777
+        );
+
+    z-index:3;
+
+    transition:1s;
+}
+
+
+/* RIBBON */
+
+.ribbon-v{
+
+    position:absolute;
+
+    left:82px;
+    top:0;
+
+    width:27px;
+    height:170px;
+
+    background:#fde68a;
+
+    z-index:4;
+}
+
+.ribbon-h{
+
+    position:absolute;
+
+    left:0;
+    top:38px;
+
+    width:190px;
+    height:18px;
+
+    background:#fde68a;
+
+    z-index:5;
+}
+
+
+/* BOW */
+
+.bow{
+
+    position:absolute;
+
+    left:65px;
+    top:-8px;
+
+    z-index:7;
+
+    font-size:58px;
+
+    transition:1s;
+}
+
+
+/* OPEN */
+
+.gift.open .lid{
+
+    transform:
+        translateY(-70px)
+        rotate(-5deg);
+}
+
+.gift.open .bow{
+
+    transform:
+        translateY(-90px)
+        rotate(15deg);
+
+    opacity:0;
+}
+
+
+/* =========================
+   MEDAL
+========================= */
+
+.medal{
+
+    opacity:0;
+
+    transform:
+        translateY(60px)
+        scale(.2);
+
+    transition:
+        1.2s
+        cubic-bezier(
+            .2,
+            .8,
+            .2,
+            1
+        );
+
+    margin:
+        15px auto 5px;
+
+    max-width:310px;
+}
+
+.gift.open + .medal{
+
+    opacity:1;
+
+    transform:
+        translateY(0)
+        scale(1);
+}
+
+.medal-circle{
+
+    width:155px;
+    height:155px;
+
+    margin:auto;
+
+    display:flex;
+
+    align-items:center;
+    justify-content:center;
+
+    border-radius:50%;
+
+    font-size:5.3rem;
+
+    background:
+        radial-gradient(
+            circle,
+            #fef3c7,
+            #fbbf24 45%,
+            #b45309
+        );
+
+    border:
+        8px solid
+        #fff7ed;
+
+    box-shadow:
+
+        0 0 0 8px
+        rgba(245,158,11,.18),
+
+        0 0 60px
+        rgba(251,191,36,.75);
+
+    animation:
+        medalFloat
+        2s
+        ease-in-out
+        infinite
+        alternate;
+}
+
+@keyframes medalFloat{
+
+    from{
+
+        transform:
+            rotate(-4deg)
+            translateY(0);
+    }
+
+    to{
+
+        transform:
+            rotate(4deg)
+            translateY(-7px);
+    }
+}
+
+.medal h4{
+
+    margin-top:20px;
+
+    font-size:1.3rem;
+
+    color:#fde68a;
+}
+
+.medal p{
+
+    margin-top:8px;
+
+    color:#cbd5e1;
+}
+
+
+/* =========================
+   FINAL MESSAGE
+========================= */
+
+.final-line{
+
+    text-align:center;
+
+    font-size:1.15rem;
+
+    line-height:2;
+}
+
+.final-line b{
+
+    color:#f9a8d4;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+footer{
+
+    position:relative;
+
+    z-index:5;
+
+    text-align:center;
+
+    padding:
+        25px 15px 40px;
+
+    color:#94a3b8;
+
+    line-height:1.8;
+}
+
+.signature{
+
+    color:#f9a8d4;
+
+    font-weight:bold;
+
+    margin-top:5px;
+}
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+.confetti{
+
+    position:fixed;
+
+    top:-40px;
+
+    z-index:1000;
+
+    pointer-events:none;
+
+    animation:
+        confettiFall
+        3.5s
+        linear
+        forwards;
+}
+
+@keyframes confettiFall{
+
+    to{
+
+        transform:
+            translateY(110vh)
+            rotate(900deg);
+
+        opacity:0;
+    }
+}
+
+
+/* =========================
+   FIREWORK EXPLOSION
+========================= */
+
+.firework-particle{
+
+    position:fixed;
+
+    width:6px;
+    height:6px;
+
+    border-radius:50%;
+
+    background:
+        radial-gradient(
+            circle,
+            white,
+            #fde68a 30%,
+            #f97316 70%
+        );
+
+    pointer-events:none;
+
+    z-index:1100;
+
+    box-shadow:
+        0 0 12px
+        4px
+        #fbbf24;
+
+    animation:
+        explode
+        1.25s
+        ease-out
+        forwards;
+}
+
+@keyframes explode{
+
+    0%{
+
+        transform:
+            translate(0,0)
+            scale(1);
+
+        opacity:1;
+    }
+
+    100%{
+
+        transform:
+            translate(
+                var(--dx),
+                var(--dy)
+            )
+            scale(.05);
+
+        opacity:0;
+    }
+}
+
+
+/* FIREWORK FLASH */
+
+.firework-core{
+
+    position:fixed;
+
+    width:7px;
+    height:7px;
+
+    border-radius:50%;
+
+    background:white;
+
+    pointer-events:none;
+
+    z-index:1099;
+
+    box-shadow:
+        0 0 25px
+        10px
+        #fde68a;
+
+    animation:
+        flash
+        .55s
+        ease-out
+        forwards;
+}
+
+@keyframes flash{
+
+    0%{
+
+        transform:scale(.5);
+
+        opacity:1;
+    }
+
+    100%{
+
+        transform:scale(6);
+
+        opacity:0;
+    }
+}
+
+
+/* =========================
+   MUSIC PLAYER
+========================= */
+
+.music-message{
+
+    margin-top:15px;
+
+    font-size:.9rem;
+
+    color:#94a3b8;
+
+    opacity:0;
+
+    transition:.5s;
+}
+
+.music-message.playing{
+
+    opacity:1;
+
+    color:#fde68a;
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media(max-width:650px){
+
+    .container{
+
+        width:92%;
+
+        padding-top:30px;
+    }
+
+    .card{
+
+        padding:
+            25px 17px;
+
+        border-radius:24px;
+    }
+
+    .hero{
+
+        padding:
+            35px 3px
+            45px;
+    }
+
+    .years{
+
+        grid-template-columns:1fr;
+    }
+
+    .emoji-wall{
+
+        letter-spacing:2px;
+
+        line-height:2.1;
+    }
+
+    .skill{
+
+        font-size:.9rem;
+
+        padding:
+            10px 14px;
+    }
+}
+
+</style>
+</head>
+
+
+<body>
+
+
+<!-- =========================
+     MUSIC
+========================= -->
+
+<audio
+    id="bgMusic"
+    src="song1.mp3"
+    preload="auto">
+</audio>
+
+
+<!-- =========================
+     BACKGROUND
+========================= -->
+
+<div id="stars"></div>
+
+<div id="crackerRain"></div>
+
+
+<main class="container">
+
+
+<!-- =========================
+     HERO
+========================= -->
+
+<section class="hero">
+
+    <div class="badge">
+
+        🎀 A Special Celebration For My Big Bro 🎀
+
+    </div>
+
+    <h1>
+
+        Umar Afroz
+
+    </h1>
+
+    <h2>
+
+        🏆 6 Years of YouTube Journey 🎉
+
+    </h2>
+
+    <p>
+
+        Six years of passion, consistency,
+        patience, learning and hard work. 🌌✨
+
+        <br>
+
+        Today is all about celebrating
+        <b>YOU</b>. 🫂
+
+    </p>
+
+</section>
+
+
+<!-- =========================
+     MESSAGE
+========================= -->
+
+<section class="card">
+
+    <h3>
+
+        💌 A Message For Big Bro
+
+    </h3>
+
+    <div class="message">
+
+        <p>
+
+            <span class="highlight">
+                Big Bro Umar Afroz
+            </span>,
+
+            congratulations on completing
+
+            <span class="gold">
+                6 amazing years on YouTube! 🎉🎊
+            </span>
+
+        </p>
+
+        <br>
+
+        <p>
+
+            Your journey is genuinely inspiring. ❤️
+
+            Six years of staying consistent,
+            creating content and continuing
+            to move forward is a huge achievement. 🏆
+
+        </p>
+
+        <br>
+
+        <p>
+
+            And what makes it even more amazing is that
+            you're also completing your
+
+            <span class="highlight">
+                CSE college journey
+            </span>
+
+            while learning
+
+            <span class="gold">
+                coding and technology. 💻📚
+            </span>
+
+        </p>
+
+        <br>
+
+        <p>
+
+            You're a
+            <b>hardworking person</b>,
+
+            a
+            <b>very well-spoken spokesman</b>,
+
+            and someone who keeps improving himself.
+
+            🫡😇
+
+        </p>
+
+        <br>
+
+        <p>
+
+            Keep going, Big Bro.
+
+            Keep learning.
+
+            Keep creating.
+
+            Keep inspiring.
+
+            🪄✨
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     JOURNEY
+========================= -->
+
+<section class="card">
+
+    <h3>
+
+        🎆 Six Years. One Amazing Journey. 🎆
+
+    </h3>
+
+    <div class="years">
+
+        <div class="year">
+
+            <strong>
+                6️⃣
+            </strong>
+
+            <span>
+                Years on YouTube
+            </span>
+
+        </div>
+
+
+        <div class="year">
+
+            <strong>
+                💻
+            </strong>
+
+            <span>
+                CSE & Coding
+            </span>
+
+        </div>
+
+
+        <div class="year">
+
+            <strong>
+                🏆
+            </strong>
+
+            <span>
+                Dedication & Hard Work
+            </span>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     APPRECIATION
+========================= -->
+
+<section class="card">
+
+    <h3>
+
+        🌟 Why Big Bro Deserves Appreciation 🌟
+
+    </h3>
+
+    <div class="skills">
+
+        <div class="skill">
+            🎤 Well-Spoken
+        </div>
+
+        <div class="skill">
+            🔥 Hardworking
+        </div>
+
+        <div class="skill">
+            💻 CSE Student
+        </div>
+
+        <div class="skill">
+            👨‍💻 Coding Learner
+        </div>
+
+        <div class="skill">
+            📚 Always Learning
+        </div>
+
+        <div class="skill">
+            🫡 Dedicated
+        </div>
+
+        <div class="skill">
+            🏆 Consistent
+        </div>
+
+        <div class="skill">
+            🪄 Inspiring
+        </div>
+
+        <div class="skill">
+            😇 Humble
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     EMOJI WALL
+========================= -->
+
+<section class="card">
+
+    <h3>
+
+        🎀 Celebration Vibes 🎀
+
+    </h3>
+
+    <div class="emoji-wall">
+
+        📚 🎉 🎊 🎈 🎀 🪄 🧸
+        🌌 🎆 🏆 🏅 🎖 🎗
+        🎂 🍩 🍰 🥀 💐 🎄
+        🫡 😇 🫂
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     GIFT
+========================= -->
+
+<section class="card gift-section">
+
+    <h3>
+
+        🎁 One Last Surprise... 🎁
+
+    </h3>
+
+    <p>
+
+        Big Bro, there's a special surprise
+        waiting for you. ❤️
+
+        <br>
+
+        <b>
+            Tap the gift box! 👆✨
+        </b>
+
+    </p>
+
+
+    <div
+        class="gift"
+        id="gift"
+    >
+
+        <div class="lid"></div>
+
+        <div class="box"></div>
+
+        <div class="ribbon-v"></div>
+
+        <div class="ribbon-h"></div>
+
+        <div class="bow">
+            🎀
+        </div>
+
+    </div>
+
+
+    <!-- MUSIC STATUS -->
+
+    <div
+        class="music-message"
+        id="musicMessage"
+    >
+
+        🎵 Playing your special song... ❤️
+
+    </div>
+
+
+    <!-- MEDAL -->
+
+    <div class="medal">
+
+        <div class="medal-circle">
+            🏅
+        </div>
+
+        <h4>
+            BIG BRO UMAR AFROZ
+        </h4>
+
+        <p>
+            🏆 6 Years of Dedication 🏆
+        </p>
+
+        <p>
+
+            This medal is for your
+            hard work, consistency
+            and amazing journey. ❤️
+
+        </p>
+
+    </div>
+
+</section>
+
+
+<!-- =========================
+     FINAL
+========================= -->
+
+<section class="card">
+
+    <h3>
+
+        🫂 Keep Shining, Big Bro! 🫂
+
+    </h3>
+
+    <div class="final-line">
+
+        <p>
+
+            Six years completed...
+            but the real journey is just beginning. 🚀
+
+        </p>
+
+        <br>
+
+        <p>
+
+            Create. 🎥
+            Learn. 📚
+            Code. 💻
+            Grow. 🌱
+            Inspire. 🪄
+
+        </p>
+
+        <br>
+
+        <p>
+
+            <b>
+
+                Congratulations once again
+                on 6 incredible years! 🎉🎊🏆
+
+            </b>
+
+        </p>
+
+        <br>
+
+        <p>
+
+            May you achieve every dream
+            you are working for. 😇✨
+
+        </p>
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<footer>
+
+    Made with ❤️, respect & lots of appreciation
+
+    <div class="signature">
+
+        For My Big Bro Umar Afroz 🫂🏆
+
+    </div>
+
+</footer>
+
+
+
+<script>
+
+
+/* =========================
+   STARS
+========================= */
+
+const stars =
+    document.getElementById("stars");
+
+for(let i=0; i<120; i++){
+
+    const star =
+        document.createElement("div");
+
+    star.className = "star";
+
+    star.style.left =
+        Math.random() * 100 + "%";
+
+    star.style.top =
+        Math.random() * 100 + "%";
+
+    star.style.animationDelay =
+        Math.random() * 3 + "s";
+
+    stars.appendChild(star);
+}
+
+
+
+/* =========================
+   FIRECRACKER SHOWER
+========================= */
+
+const crackerRain =
+    document.getElementById(
+        "crackerRain"
+    );
+
+const crackerEmojis = [
+
+    "🎆",
+    "🎇",
+    "✨",
+    "💥",
+    "🎉",
+    "🎊",
+    "⭐",
+    "🌟",
+    "🪄"
+
+];
+
+
+for(let i=0; i<45; i++){
+
+    const cracker =
+        document.createElement("div");
+
+    cracker.className =
+        "cracker";
+
+    cracker.textContent =
+        crackerEmojis[
+            Math.floor(
+                Math.random() *
+                crackerEmojis.length
+            )
+        ];
+
+    cracker.style.left =
+        Math.random() * 100 + "%";
+
+    cracker.style.setProperty(
+        "--size",
+        Math.random()
+    );
+
+    cracker.style.setProperty(
+        "--duration",
+        (4 + Math.random() * 6) + "s"
+    );
+
+    cracker.style.setProperty(
+        "--delay",
+        (-Math.random() * 8) + "s"
+    );
+
+    crackerRain.appendChild(
+        cracker
+    );
+}
+
+
+
+/* =========================
+   CONFETTI
+========================= */
+
+function createConfetti(){
+
+    const emojis = [
+
+        "🎉",
+        "🎊",
+        "🎈",
+        "🎀",
+        "✨",
+        "🏆",
+        "🏅",
+        "🎖",
+        "🎗",
+        "🎂",
+        "🍩",
+        "🍰",
+        "💐",
+        "🥀",
+        "🪄",
+        "⭐",
+        "❤️",
+        "💖"
+
+    ];
+
+
+    for(let i=0; i<120; i++){
+
+        const piece =
+            document.createElement(
+                "div"
+            );
+
+        piece.className =
+            "confetti";
+
+        piece.textContent =
+            emojis[
+                Math.floor(
+                    Math.random() *
+                    emojis.length
+                )
+            ];
+
+        piece.style.left =
+            Math.random() * 100 + "vw";
+
+        piece.style.fontSize =
+            (12 + Math.random() * 20)
+            + "px";
+
+        piece.style.animationDuration =
+            (2.5 + Math.random() * 2)
+            + "s";
+
+        piece.style.animationDelay =
+            Math.random() * .7
+            + "s";
+
+        document.body.appendChild(
+            piece
+        );
+
+
+        setTimeout(()=>{
+
+            piece.remove();
+
+        },5000);
+
+    }
+
+}
+
+
+
+/* =========================
+   FIREWORK EXPLOSION
+========================= */
+
+function createFirework(){
+
+    const x =
+        10 + Math.random() * 80;
+
+    const y =
+        10 + Math.random() * 45;
+
+
+    /* CORE */
+
+    const core =
+        document.createElement("div");
+
+    core.className =
+        "firework-core";
+
+    core.style.left =
+        x + "vw";
+
+    core.style.top =
+        y + "vh";
+
+    document.body.appendChild(
+        core
+    );
+
+
+    setTimeout(()=>{
+
+        core.remove();
+
+    },600);
+
+
+
+    /* PARTICLES */
+
+    const particleCount = 65;
+
+
+    for(
+        let i=0;
+        i<particleCount;
+        i++
+    ){
+
+        const particle =
+            document.createElement(
+                "div"
+            );
+
+        particle.className =
+            "firework-particle";
+
+
+        particle.style.left =
+            x + "vw";
+
+        particle.style.top =
+            y + "vh";
+
+
+        const angle =
+            (Math.PI * 2 * i)
+            / particleCount;
+
+
+        const distance =
+            60 +
+            Math.random() * 150;
+
+
+        const dx =
+            Math.cos(angle)
+            * distance;
+
+
+        const dy =
+            Math.sin(angle)
+            * distance;
+
+
+        particle.style.setProperty(
+            "--dx",
+            dx + "px"
+        );
+
+        particle.style.setProperty(
+            "--dy",
+            dy + "px"
+        );
+
+
+        document.body.appendChild(
+            particle
+        );
+
+
+        setTimeout(()=>{
+
+            particle.remove();
+
+        },1400);
+
+    }
+
+}
+
+
+
+/* =========================
+   FIREWORK SHOW
+========================= */
+
+function fireworksShow(){
+
+    createFirework();
+
+    setTimeout(
+        createFirework,
+        350
+    );
+
+    setTimeout(
+        createFirework,
+        700
+    );
+
+    setTimeout(
+        createFirework,
+        1050
+    );
+
+    setTimeout(
+        createFirework,
+        1400
+    );
+
+    setTimeout(
+        createFirework,
+        1750
+    );
+
+    setTimeout(
+        createFirework,
+        2100
+    );
+
+    setTimeout(
+        createFirework,
+        2450
+    );
+
+    setTimeout(
+        createFirework,
+        2800
+    );
+
+}
+
+
+
+/* =========================
+   GIFT + MUSIC
+========================= */
+
+const gift =
+    document.getElementById(
+        "gift"
+    );
+
+
+const bgMusic =
+    document.getElementById(
+        "bgMusic"
+    );
+
+
+const musicMessage =
+    document.getElementById(
+        "musicMessage"
+    );
+
+
+gift.addEventListener(
+    "click",
+    function(){
+
+        /* Prevent clicking again */
+
+        if(
+            gift.classList.contains(
+                "open"
+            )
+        ){
+
+            return;
+
+        }
+
+
+        /* OPEN GIFT */
+
+        gift.classList.add(
+            "open"
+        );
+
+
+        /* =========================
+           PLAY SONG
+        ========================= */
+
+        bgMusic.currentTime = 0;
+
+        bgMusic.play()
+            .then(function(){
+
+                musicMessage.classList.add(
+                    "playing"
+                );
+
+            })
+            .catch(function(error){
+
+                console.log(
+                    "Audio could not play:",
+                    error
+                );
+
+                musicMessage.textContent =
+                    "🎵 Tap the page once more to play the song ❤️";
+
+                musicMessage.classList.add(
+                    "playing"
+                );
+
+            });
+
+
+        /* =========================
+           CONFETTI
+        ========================= */
+
+        createConfetti();
+
+
+        /* =========================
+           FIREWORKS
+        ========================= */
+
+        fireworksShow();
+
+    }
+);
+
+</script>
+
+</body>
+</html>
